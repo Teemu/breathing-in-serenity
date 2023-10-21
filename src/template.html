@@ -1,48 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    {{#html.metadata}}
-    <meta name="{{name}}" content="{{content}}">
-    {{/html.metadata}}
-    {{#html.description}}
-    <meta name="description" content="{{html.description}}">
-    {{/html.description}}
-    {{#html.iconUrl}}
-    <link rel="shortcut icon" href="{{html.iconUrl}}">
-    {{/html.iconUrl}}
-    {{#html.diskPrefix}}
-    <script id="wasm4-disk-prefix" type="text/plain">{{{html.diskPrefix}}}</script>
-    {{/html.diskPrefix}}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  {{#html.metadata}}
+  <meta name="{{name}}" content="{{content}}">
+  {{/html.metadata}}
+  {{#html.description}}
+  <meta name="description" content="{{html.description}}">
+  {{/html.description}}
+  {{#html.iconUrl}}
+  <link rel="shortcut icon" href="{{html.iconUrl}}">
+  {{/html.iconUrl}}
+  {{#html.diskPrefix}}
+  <script id="wasm4-disk-prefix" type="text/plain">{{{html.diskPrefix}}}</script>
+  {{/html.diskPrefix}}
+  <title>{{html.title}}</title>
+  <style>{{{html.wasm4Css}}}</style>
 
-    <meta property="og:title" content="Breathing in Serenity">
-    <meta property="og:description" content="A visual representation of trees, crafted with AssemblyScript for the WASM-4 fantasy console">
-    <meta property="og:image" content="https://repository-images.githubusercontent.com/708174763/4b413829-2ec4-4aee-afff-7e414f38a970">
+  <meta property="og:title" content="Breathing in Serenity">
+  <meta property="og:description"
+      content="A visual representation of trees, crafted with AssemblyScript for the WASM-4 fantasy console">
+  <meta property="og:image"
+      content="https://repository-images.githubusercontent.com/708174763/4b413829-2ec4-4aee-afff-7e414f38a970">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Breathing in Serenity">
-    <meta property="twitter:description" content="A visual representation of trees, crafted with AssemblyScript for the WASM-4 fantasy console">
-    <meta property="twitter:image" content="https://repository-images.githubusercontent.com/708174763/4b413829-2ec4-4aee-afff-7e414f38a970">
-
-    <title>{{html.title}}</title>
-    <style>
-        {
-                {
-                    {
-                    html.wasm4Css
-                }
-            }
-        }
-    </style>
-    <!-- The favicon is from the open source project Twemoji. The graphics are copyright 2020 Twitter, Inc and other contributors. The graphics are licensed under CC-BY 4.0. -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Breathing in Serenity">
+  <meta property="twitter:description"
+      content="A visual representation of trees, crafted with AssemblyScript for the WASM-4 fantasy console">
+  <meta property="twitter:image"
+      content="https://repository-images.githubusercontent.com/708174763/4b413829-2ec4-4aee-afff-7e414f38a970">
+  <!-- The favicon is from the open source project Twemoji. The graphics are copyright 2020 Twitter, Inc and other contributors. The graphics are licensed under CC-BY 4.0.-->
 </head>
-
 <body>
-    <script id="wasm4-cart-json" type="application/json">{{{html.wasmCartJson}}}</script>
-    <script>{ { { html.wasm4js } } }</script>
-    <wasm4-app></wasm4-app>
+  <script id="wasm4-cart-json" type="application/json">{{{html.wasmCartJson}}}</script>
+  <script>{{{html.wasm4js}}}</script>
+  <wasm4-app></wasm4-app>
 </body>
-
 </html>
