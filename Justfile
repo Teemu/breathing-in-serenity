@@ -13,7 +13,7 @@ build:
     npx w4 bundle build/cart.wasm --title "Breathing in Serenity" --html build/breathing-in-serenity.html
 
 deploy:
-    just build
+    npx w4 bundle build/cart.wasm --title "Breathing in Serenity" --html build/breathing-in-serenity.html
     git checkout gh-pages
     cp build/breathing-in-serenity.html index.html
     git add index.html && git commit -m "Build gh-pages"
