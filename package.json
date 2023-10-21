@@ -1,0 +1,13 @@
+{
+  "name": "trees-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "asc --target release",
+    "build:debug": "asc --target debug"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.21.3",
+    "assemblyscript-prettier": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
