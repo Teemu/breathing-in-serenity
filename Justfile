@@ -16,6 +16,6 @@ deploy:
     just build
     git checkout gh-pages
     cp build/breathing-in-serenity.html index.html
-    git add index.html && git commit -m "Build gh-pages
+    git add index.html && git commit -m "Build gh-pages"
     git push origin gh-pages
     git checkout main
