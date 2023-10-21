@@ -28,7 +28,7 @@ let buttonLeftRight: f64 = 0.0;
 let buttonDownTop: f64 = 0.0;
 
 const POEM = [
-  "test",
+  "",
   "As a tree sways\nin the gentle\nbreeze",
   "Savor moments\nsuch as these",
   "Let the past\nand tomorrows\ncease",
