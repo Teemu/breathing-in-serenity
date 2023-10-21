@@ -1,23 +1,11 @@
 # Breathing in Serenity
 
-A graphics demo written in AssemblyScript for the [WASM-4](https://wasm4.org) fantasy console.
+A visual representation of trees, crafted with AssemblyScript for the [WASM-4](https://wasm4.org) fantasy console.
 
-## Building
-
-First setup the project by running:
+## Running
 
 ```shell
-npm install
-```
-
-Build the cart by running:
-
-```shell
-npm run build
-```
-
-Then run it with:
-
-```shell
-w4 run build/cart.wasm
+brew install just
+just install
+just run
 ```
