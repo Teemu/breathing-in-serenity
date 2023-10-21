@@ -426,7 +426,7 @@ function drawText(): void {
         w4.tone(
           220 | (0 << 16),
           (0 << 24) | (0 << 16) | 0 | (16 << 8),
-          100,
+          99,
           w4.TONE_MODE2,
         );
       }
