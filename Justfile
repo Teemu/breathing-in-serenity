@@ -11,7 +11,7 @@ install:
 
 build:
     npm run build
-    npx w4 bundle build/cart.wasm --title "Breathing in Serenity" --html build/breathing-in-serenity.html
+    npx w4 bundle build/cart.wasm --title "Breathing in Serenity" --html build/breathing-in-serenity.html --icon-file "favicon.ico"
 
 deploy:
     just build
